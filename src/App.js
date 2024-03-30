@@ -8,9 +8,11 @@ import FoodAdd from "./FoodAdd";
 function App() {
   return (
     <div>
-      <h1 className="p-2 mt-[3%] text-[25px] font-bold text-gray-700 text-center ">
-        Food Delivery App
-      </h1>
+      <div>
+        <h1 className="fixed top-0 w-[100%] z-10  text-center p-2 mt-[1%] text-[25px] font-bold text-gray-700 ">
+          Food Delivery App
+        </h1>
+      </div>
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/orderfood" element={<FoodOrder />} />

@@ -22,33 +22,36 @@ function Dashboard() {
     data && data.filter((item) => item.dish.includes(searchDish));
 
   return (
-    <div className="h-auto my-[3%] ">
-      <div className=" h-[10vh] my-[3%] flex flex-row justify-around items-center ">
+    <div className="h-auto mt-[15%]  md:mt-[8%] lg:mt-[5%] ">
+      <div className=" h-[25vh] sm:h-[10vh] my-[.5%] flex flex-col gap-2 justify-center md:flex-row md:justify-evenly items-center ">
         <button
           onClick={() => navigate("/addfood")}
-          className="block border px-4 py-1.5 text-white font-semibold bg-blue-500 hover:bg-blue-700 rounded-md shadow-xl "
+          className="block border px-4 py-1.5 text-white font-semibold bg-gradient-to-r from-lime-400 to-yellow-400 rounded-md shadow-xl "
         >
           ADD FOOD
         </button>
         <input
-          onChange={(e) => setSearchDish(e.target.value)}
-          className="block py-1.5 pl-6 text-[18px] md:w-[500px] text-gray-700 font-semibold outline-none border rounded-[25px] "
+          onChange={(e) => setSearchDish(e.target.value.toLowerCase())}
+          className="block py-1.5 pl-6 text-[18px]  md:w-[300px] lg:w-[500px] text-gray-700 font-semibold outline-none border rounded-[25px] "
           placeholder="search food"
         />
         <button
           onClick={() => navigate("/orderfood")}
-          className="block border px-4 py-1.5 text-white font-semibold bg-blue-500 hover:bg-blue-700 rounded-md shadow-xl "
+          className="block border px-4 py-1.5 text-white font-semibold bg-gradient-to-l from-lime-400 to-yellow-400 rounded-md shadow-xl "
         >
           ORDER FOOD
         </button>
       </div>
-      <div className="h-[50vh] mx-[10%] py-[10px] grid grid-cols-2 gap-4 md:grid-cols-5 text-center overflow-y-auto ">
+      <p className="py-1 text-center text-gray-700 text-[25px] font-bold">
+        MENU
+      </p>
+      <div className="h-[55vh] md:h-[58vh] lg:h-[65vh] mx-[10%] md:py-[10px] grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 text-center overflow-y-auto ">
         {data ? (
           filterData.map((item) => {
             return (
               <div
                 key={item._id}
-                className="h-[140px] w-[190px] text-white font-semibold border bg-gradient-to-t from-purple-400 to-pink-400 p-4 rounded-md shadow-xl"
+                className="h-[135px] w-[100%] md:w-[190px] text-white font-semibold border bg-gradient-to-t from-purple-400 to-pink-400 p-4 rounded-md shadow-xl"
               >
                 <p className="text-[22px] font-bold text-gray-800">
                   {item.dish}

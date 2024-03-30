@@ -47,18 +47,18 @@ function FoodAdd() {
   };
 
   return (
-    <div className="h-auto">
-      <div className=" h-[10vh] my-[1%] flex flex-row justify-around items-center ">
+    <div className="h-auto mt-[15%]  md:mt-[8%] lg:mt-[5%] ">
+      <div className=" h-[10vh] my-[1%] flex flex-row justify-evenly items-center ">
         <button
           onClick={() => navigate("/")}
-          className="block border px-4 py-1.5 text-white font-semibold bg-blue-500 hover:bg-blue-700 rounded-md shadow-xl "
+          className="block border px-4 py-1.5 text-white font-semibold bg-gradient-to-r from-lime-400 to-yellow-400 rounded-md shadow-xl "
         >
           DASHBOARD
         </button>
 
         <button
           onClick={() => navigate("/orderfood")}
-          className="block border px-4 py-1.5 text-white font-semibold bg-blue-500 hover:bg-blue-700 rounded-md shadow-xl "
+          className="block border px-4 py-1.5 text-white font-semibold bg-gradient-to-l from-lime-400 to-yellow-400 rounded-md shadow-xl "
         >
           ORDER FOOD
         </button>
@@ -66,7 +66,7 @@ function FoodAdd() {
       <div className="flex flex-col justify-center items-center">
         <form
           onSubmit={handleSubmit}
-          className="border h-[60vh] w-[50vh] flex flex-col gap-5 justify-center items-center bg-violet-400 "
+          className="border h-[75vh] lg:h-[60vh] w-[50vh] flex flex-col gap-5 justify-center items-center bg-violet-400 "
         >
           <h2 className="  text-[18px] font-semibold text-white">
             Add New Food Menu
@@ -75,7 +75,7 @@ function FoodAdd() {
             type="text"
             name="dish"
             onChange={handleChange}
-            value={data.dish}
+            value={data.dish.toLowerCase()}
             className=" w-[75%] p-2 pl-4 text-[16px] rounded-md font-semibold outline-none  "
             placeholder="Enter dish name"
           />
@@ -102,10 +102,10 @@ function FoodAdd() {
             <option>Ltr</option>
           </select>
           <input
-            type="text"
+            type="number"
             name="unitPrice"
             onChange={handleChange}
-            value={data.unitPrice}
+            value={data.unitPrice.toLowerCase()}
             className=" w-[75%] p-2 pl-4 text-[16px] rounded-md font-semibold outline-none  "
             placeholder="Enter unit price"
           />

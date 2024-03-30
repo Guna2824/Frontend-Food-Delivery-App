@@ -58,18 +58,18 @@ function FoodOrder() {
   };
 
   return (
-    <div className="h-auto  ">
-      <div className=" h-[10vh] my-[3%] flex flex-row justify-around items-center ">
+    <div className="h-auto mt-[20%] xs:mt-[10%] md:mt-[8%] lg:mt-[5%] ">
+      <div className=" h-[10vh] my-[3%] flex flex-row justify-evenly items-center ">
         <button
           onClick={() => navigate("/addfood")}
-          className="block border px-4 py-1.5 text-white font-semibold bg-blue-500 hover:bg-blue-700 rounded-md shadow-xl "
+          className="block border px-4 py-1.5 text-white font-semibold bg-gradient-to-r from-lime-400 to-yellow-400 rounded-md shadow-xl "
         >
           ADD FOOD
         </button>
 
         <button
           onClick={() => navigate("/")}
-          className="block border px-4 py-1.5 text-white font-semibold bg-blue-500 hover:bg-blue-700 rounded-md shadow-xl "
+          className="block border px-4 py-1.5 text-white font-semibold bg-gradient-to-l from-lime-400 to-yellow-400 rounded-md shadow-xl "
         >
           DASHBOARD
         </button>
@@ -77,7 +77,7 @@ function FoodOrder() {
       <div className="flex flex-col justify-center items-center">
         <form
           onSubmit={submit}
-          className="h-[50vh] w-[45vh] mb-[2%] bg-gradient-to-b from-orange-500 to-yellow-500 flex flex-col justify-center items-center gap-6 border"
+          className="h-[65vh] lg:h-[50vh] sm:w-[60vh]  mb-[2%] bg-gradient-to-b from-orange-500 to-yellow-500 flex flex-col justify-center items-center gap-6 border"
         >
           <h2 className="  text-[18px] font-semibold text-white">
             Select and Order Food
@@ -123,13 +123,13 @@ function FoodOrder() {
           </button>
         </form>
 
-        <div className="mb-[5%] ">
+        <div className="mb-[5%] mt-[2%]  ">
           {result &&
             result.map((item) => {
               return (
                 <table
                   key={item.dish}
-                  className="w-[300px] text-center border "
+                  className="sm:w-[300px] w-[40vh] text-center border "
                 >
                   <caption className="text-[18px] font-semibold text-white bg-red-500 p-2 animate-bounce">
                     Food App Price Breakup Detail
