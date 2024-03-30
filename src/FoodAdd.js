@@ -86,8 +86,8 @@ function FoodAdd() {
             className="w-[75%] p-2 text-[16px] rounded-md font-semibold outline-none "
           >
             <option>Select Type</option>
-            <option>persihable</option>
-            <option>non-persihable</option>
+            <option>perishable</option>
+            <option>non-perishable</option>
           </select>
 
           <select
