@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <div>
-        <h1 className="fixed top-0 w-[100%] z-10  text-center p-2 mt-[1%] text-[25px] font-bold text-gray-700 ">
+        <h1 className=" text-center p-2 mt-[1%] text-[25px] font-bold text-gray-700 ">
           Food Delivery App
         </h1>
       </div>

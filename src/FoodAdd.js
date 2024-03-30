@@ -47,7 +47,7 @@ function FoodAdd() {
   };
 
   return (
-    <div className="h-auto mt-[15%]  md:mt-[8%] lg:mt-[5%] ">
+    <div className="h-auto mt-[1%] ">
       <div className=" h-[10vh] my-[1%] flex flex-row justify-evenly items-center ">
         <button
           onClick={() => navigate("/")}
@@ -63,10 +63,10 @@ function FoodAdd() {
           ORDER FOOD
         </button>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className=" flex flex-col justify-center items-center">
         <form
           onSubmit={handleSubmit}
-          className="border h-[75vh] lg:h-[60vh] w-[50vh] flex flex-col gap-5 justify-center items-center bg-violet-400 "
+          className="border h-[70vh] lg:h-[60vh] w-[50vh] flex flex-col gap-5 justify-center items-center bg-violet-400 "
         >
           <h2 className="  text-[18px] font-semibold text-white">
             Add New Food Menu

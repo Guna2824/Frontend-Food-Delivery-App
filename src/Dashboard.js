@@ -22,7 +22,7 @@ function Dashboard() {
     data && data.filter((item) => item.dish.includes(searchDish));
 
   return (
-    <div className="h-auto mt-[15%]  md:mt-[8%] lg:mt-[5%] ">
+    <div className="h-auto mt-[1%] ">
       <div className=" h-[25vh] sm:h-[10vh] my-[.5%] flex flex-col gap-2 justify-center md:flex-row md:justify-evenly items-center ">
         <button
           onClick={() => navigate("/addfood")}

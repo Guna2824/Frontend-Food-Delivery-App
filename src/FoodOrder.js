@@ -58,7 +58,7 @@ function FoodOrder() {
   };
 
   return (
-    <div className="h-auto mt-[20%] xs:mt-[10%] md:mt-[8%] lg:mt-[5%] ">
+    <div className="h-auto mt-[1%] ">
       <div className=" h-[10vh] my-[3%] flex flex-row justify-evenly items-center ">
         <button
           onClick={() => navigate("/addfood")}
