@@ -109,7 +109,7 @@ function FoodOrder() {
             className="w-[75%] p-2 text-[16px] rounded-md font-semibold outline-none "
           >
             <option>Select Zone</option>
-            <option value={"center"}>Center</option>
+            <option value={"center"}>center</option>
             <option value={"north"}>North</option>
             <option value={"east"}>East</option>
             <option value={"west"}>West</option>

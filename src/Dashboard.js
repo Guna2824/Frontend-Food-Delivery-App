@@ -45,13 +45,13 @@ function Dashboard() {
       <p className="py-1 text-center text-gray-700 text-[25px] font-bold">
         MENU
       </p>
-      <div className="h-[55vh] md:h-[58vh] lg:h-[65vh] mx-[10%] md:py-[10px] grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 text-center overflow-y-auto ">
+      <div className="h-[55vh] md:h-[58vh] lg:h-[65vh] mx-[10%] md:py-[10px] grid grid-cols-1  gap-4 md:grid-cols-2 md:mx-[15%] lg:grid-cols-3 xl:grid-cols-4  text-center overflow-y-auto ">
         {data ? (
           filterData.map((item) => {
             return (
               <div
                 key={item._id}
-                className="h-[135px] w-[100%] md:w-[190px] text-white font-semibold border bg-gradient-to-t from-purple-400 to-pink-400 p-4 rounded-md shadow-xl"
+                className="h-[135px] w-[100%] lg:w-[230px] text-white font-semibold border bg-gradient-to-t from-purple-400 to-pink-400 p-4 rounded-md shadow-xl"
               >
                 <p className="text-[22px] font-bold text-gray-800">
                   {item.dish}
